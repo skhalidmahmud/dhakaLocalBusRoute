@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:baselineAligned="false"
+    android:weightSum="800"
+    android:background="@color/White"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="800"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="top"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="#0BBBE1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/white"
+            android:layout_marginBottom="10dp"
+            android:padding="2dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardElevation="1dp"
+                app:cardCornerRadius="6dp"
+                android:layout_margin="1dp"
+                app:cardBackgroundColor="#bbbbbb"
+                app:cardMaxElevation="1dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true">
+                <androidx.cardview.widget.CardView
+                    android:padding="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardElevation="1dp"
+                    app:cardCornerRadius="4dp"
+                    android:layout_margin="1dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardMaxElevation="1dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:id="@+id/imageView2"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                app:tint="#888888"
+                                app:srcCompat="@drawable/ic_map_start" />
+                            <ImageView
+                                android:id="@+id/imageView3"
+                                android:layout_width="25dp"
+                                android:layout_height="18dp"
+                                android:layout_weight="1"
+                                app:tint="#888888"
+                                app:srcCompat="@drawable/ic_dotted_barline" />
+                            <ImageView
+                                android:id="@+id/imageView4"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                app:tint="#888888"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/ic_map_end" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="8">
+
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:text="@string/rs" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="470"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardElevation="1dp"
+                app:cardCornerRadius="6dp"
+                android:layout_margin="1dp"
+                app:cardBackgroundColor="#bbbbbb"
+                app:cardMaxElevation="1dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true">
+                <androidx.cardview.widget.CardView
+                    android:padding="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardElevation="1dp"
+                    app:cardCornerRadius="4dp"
+                    android:layout_margin="1dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardMaxElevation="1dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+                </androidx.cardview.widget.CardView>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="50"
+        android:orientation="horizontal"
+        android:background="#0BBBE1">
+
+
+        <ImageView
+            android:id="@+id/menu_id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:srcCompat="@drawable/ic_menu"
+            app:tint="@color/White" />
+
+        <TextView
+            android:id="@+id/home_id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="@color/White"
+            android:text="@string/home" />
+
+        <TextView
+            android:id="@+id/all_bus_id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textColor="@color/White"
+            android:textSize="25sp"
+            android:text="@string/all_bus" />
+    </LinearLayout>
+</LinearLayout>
